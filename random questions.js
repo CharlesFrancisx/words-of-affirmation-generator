@@ -103,5 +103,6 @@ const randomAns = [
 document.getElementById("randomBtn").onclick = function () {
   const randomNum = randomAns[Math.floor(Math.random() * randomAns.length)];
   title.textContent = randomNum;
+
   randomBtn.textContent = "generate again";
 };
