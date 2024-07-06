@@ -1,4 +1,3 @@
-let title = document.getElementById("title");
 const randomAns = [
   "You're not alone; I'm here for you.",
   "It's okay to not be okay. Take your time.",
@@ -101,8 +100,10 @@ const randomAns = [
 ];
 
 document.getElementById("randomBtn").onclick = function () {
+  const answerTxt = document.getElementById("answerTxt");
+  let title = document.getElementById("title");
+
   const randomNum = randomAns[Math.floor(Math.random() * randomAns.length)];
   title.textContent = randomNum;
-
-  // randomBtn.textContent = "generate again";
+  answerTxt.textContent = "generate again";
 };
