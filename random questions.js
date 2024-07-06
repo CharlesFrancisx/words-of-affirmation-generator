@@ -1,4 +1,5 @@
-let answerTxt = document.getElementById("answerTxt");
+let title = document.getElementById("title");
+let random = document.getElementById("footer");
 const randomAns = [
   "You're not alone; I'm here for you.",
   "It's okay to not be okay. Take your time.",
@@ -100,9 +101,9 @@ const randomAns = [
   "You are not defined by your challenges; you're defined by how you rise above them.",
 ];
 
-let card = document.getElementById("card");
 document.getElementById("randomBtn").onclick = function () {
   const randomNum = randomAns[Math.floor(Math.random() * randomAns.length)];
-  answerTxt.textContent = randomNum;
-  card.style.display = "block";
+  title.textContent = randomNum;
+
+  randomBtn.textContent = "generate again";
 };
